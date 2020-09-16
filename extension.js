@@ -1,37 +1,71 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
-const vscode = require('vscode');
+const vscode = require("vscode");
+const fileCreator = require("./utils/fileCreator");
 
-// this method is called when your extension is activated
-// your extension is activated the very first time the command is executed
-
-/**
- * @param {vscode.ExtensionContext} context
- */
 function activate(context) {
+  const createComponentInSrc = vscode.commands.registerCommand(
+    "nrs.createComponentInSrc",
+    async () => {
+      // creates src directory and appends component directory and appends file component directory.
+      fileCreator("component", "/src/components/");
+    }
+  );
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "next-js-react-storybook-commands" is now active!');
+  const createComponent = vscode.commands.registerCommand(
+    "nrs.createComponent",
+    async () => {
+      // creates component directory and appends file to it.
+      fileCreator("component", "/components/");
+    }
+  );
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with  registerCommand
-	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('next-js-react-storybook-commands.helloWorld', function () {
-		// The code you place here will be executed every time your command is executed
+  const createPageInSrc = vscode.commands.registerCommand(
+    "nrs.createPageInSrc",
+    async () => {
+      // create pages directory in src directory and appends file to it.
+      fileCreator("page", "/src/pages/");
+    }
+  );
 
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from next.js-react-storybook-commands!');
-	});
+  const createPage = vscode.commands.registerCommand(
+    "nrs.createPage",
+    async () => {
+      // creates page and appends file to it.
+      fileCreator("page", "/pages/");
+    }
+  );
 
-	context.subscriptions.push(disposable);
+  const createStorybookComponentInSrc = vscode.commands.registerCommand(
+    "nrs.createStorybookComponentInSrc",
+    async () => {
+      // creates storybook directory  in src directory and appends stories in it.
+      fileCreator("story", "/src/stories/");
+    }
+  );
+
+  const createStorybookComponent = vscode.commands.registerCommand(
+    "nrs.createStorybookComponent",
+    async () => {
+      // creates storybook directory and appends stories to it.
+      fileCreator("story", "/stories/");
+    }
+  );
+
+  const subscriptions = [
+    createComponent,
+    createComponentInSrc,
+    createPage,
+    createPageInSrc,
+    createStorybookComponent,
+    createStorybookComponentInSrc,
+  ];
+
+  context.subscriptions.push(...subscriptions);
 }
 exports.activate = activate;
 
-// this method is called when your extension is deactivated
 function deactivate() {}
 
 module.exports = {
-	activate,
-	deactivate
-}
+  activate,
+  deactivate,
+};
