@@ -1,9 +1,11 @@
 # Change Log
 
-All notable changes to the "next-js-react-storybook-commands" extension will be documented in this file.
+All notable changes to the "Next.js/React/Storybook Commands" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 1.0.0 - 2020/09/17
 
-## [Unreleased]
+### Added
 
-- Initial release
+- added commands to create react components with prop types
+- added commands to create nextjs pages
+- added commands to create stories
