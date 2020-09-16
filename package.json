@@ -12,6 +12,7 @@
     "type": "git",
     "url": "https://github.com/pulkitgangwar/Next.js-React-Storybook-Commands"
   },
+  "icon": "assets/next.js-react-storybook-commands-logo.png",
   "keywords": [
     "nextjs",
     "next.js",
