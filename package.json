@@ -32,7 +32,12 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:next-js-react-storybook-commands.helloWorld"
+    "onCommand:nrs.createComponentInSrc",
+    "onCommand:nrs.createComponent",
+    "onCommand:nrs.createPageInSrc",
+    "onCommand:nrs.createPage",
+    "onCommand:nrs.createStorybookComponentInSrc",
+    "onCommand:nrs.createStorybookComponent"
   ],
   "main": "./extension.js",
   "contributes": {
