@@ -43,8 +43,28 @@
   "contributes": {
     "commands": [
       {
-        "command": "next-js-react-storybook-commands.helloWorld",
-        "title": "Hello World"
+        "command": "nrs.createComponentInSrc",
+        "title": "Create a component in src directory"
+      },
+      {
+        "command": "nrs.createComponent",
+        "title": "Create a component in root"
+      },
+      {
+        "command": "nrs.createPageInSrc",
+        "title": "Create a page in src directory"
+      },
+      {
+        "command": "nrs.createPage",
+        "title": "Create a page in root"
+      },
+      {
+        "command": "nrs.createStorybookComponentInSrc",
+        "title": "Create a Story in src directory"
+      },
+      {
+        "command": "nrs.createStorybookComponent",
+        "title": "Create a Story in root"
       }
     ]
   },
