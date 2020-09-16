@@ -9,6 +9,10 @@ Create components, stories and pages with commands.
 - type (create a component in src directory).
 - give file a name with extension.
 
+# Usage
+
+![Usage](./assets/next.js-react-storybook-commands.gif)
+
 ## React Components Commands
 
 ### create a components in src directory.
