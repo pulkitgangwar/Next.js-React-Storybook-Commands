@@ -45,27 +45,27 @@
     "commands": [
       {
         "command": "nrs.createComponentInSrc",
-        "title": "Create a component in src directory"
+        "title": "sc (component in src directory)"
       },
       {
         "command": "nrs.createComponent",
-        "title": "Create a component in root"
+        "title": "rc (component in root directory)"
       },
       {
         "command": "nrs.createPageInSrc",
-        "title": "Create a page in src directory"
+        "title": "sp (page in src directory)"
       },
       {
         "command": "nrs.createPage",
-        "title": "Create a page in root"
+        "title": "rp (page in root directory)"
       },
       {
         "command": "nrs.createStorybookComponentInSrc",
-        "title": "Create a Story in src directory"
+        "title": "ss (story in src directory)"
       },
       {
         "command": "nrs.createStorybookComponent",
-        "title": "Create a Story in root"
+        "title": "rs (story in root directory)"
       }
     ]
   },

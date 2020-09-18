@@ -6,7 +6,7 @@ Create components, stories and pages with commands.
 
 - install the extension
 - open command palette (ctrl + shift + p) or (cmd + shift + p)
-- type (create a component in src directory).
+- type sc.
 - give file a name with extension.
 
 # Usage
@@ -15,30 +15,30 @@ Create components, stories and pages with commands.
 
 ## React Components Commands
 
-### create a components in src directory.
+### sc (component in src directory)
 
 - This command will create component directory inside src directory and then append file in it.
 
-### create a components in root
+### rc (component in root directory)
 
 - This command will create component directory in root and then append file in it.
 
 ## Next.js Pages Commands
 
-### create pages in src directory.
+### sp (page in src directory)
 
 - This command will create pages directory inside src directory and then append file in it.
 
-### create a pages in root.
+### rp (page in root directory)
 
 - This command will create pages directory inside root and then append file into it.
 
 ## Storybook Components Commands
 
-### create a story in src directory.
+### ss (story in src directory)
 
 - This command will create stories directory inside src directory and the append story in it.
 
-### create a story in root.
+### rs (story in root directory)
 
 - This command will create a stories directory and then append story file in it.
