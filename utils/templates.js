@@ -29,19 +29,18 @@ const template = {
               `;
   },
   story: (fileName) => {
-    fileName = `${fileName}Component`;
     return `
       import React from "react";
           
       //import component here   
-      //import ${fileName} from "";
+      //import ${fileName}Component from "";
           
       export default {
           title:"",  
-          component:${fileName} 
+          component:${fileName}Component 
       }
           
-      const Template = (args) => <${fileName} {...args} />
+      const Template = (args) => <${fileName}Component {...args} />
           
       ${fileName}.args = {}
               `;
